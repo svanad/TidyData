@@ -46,8 +46,9 @@ The script does the following transformations
 * summarizes the data in the desired format with `ddply(data, .(person, activity), numcolwise(mean))` (see previous section)
 * saves the data into "tidydata.txt" in tab separated format with header
 
-##Feature Selection for the original dataset (cited from the description of the original dataset
-[http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones))
+The names of all the columns is taken from the data and saved into file "features.txt"
+
+##Feature Selection for the original dataset (cited from the description of the [original dataset](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones))
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
