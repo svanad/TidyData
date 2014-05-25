@@ -40,7 +40,7 @@ Following files are used from the original dataset
 The data is generated in the tab separated format. Read the data into R with   
 `read.table("tidydata.txt", header = TRUE)`
 
-The script uses the plyr library. 
+The script uses the plyr library. The way the script works is described in the Code book
 
 ##References
 * description and full original dataset   
