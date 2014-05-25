@@ -14,8 +14,8 @@ All the variables are listed in the file "features.txt"
 For description of the variables see the last section (Feature Selection for the original dataset). 
 
 ###Format
-Each record of the generated dataset has the form
-	person activity Feature1 ... Feature79
+Each record of the generated dataset has the form     
+`person activity Feature1 ... Feature79`
 
 Types of the fields are as follows
 * person - a number from 1 to 30 (for each of the 30 participants of the measurements)
