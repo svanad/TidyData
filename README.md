@@ -40,7 +40,20 @@ Following files are used from the original dataset
 The data is generated in the tab separated format. Read the data into R with   
 `read.table("tidydata.txt", header = TRUE)`
 
-The script uses the plyr library. The way the script works is described in the Code book
+The script uses the plyr library. 
+
+###How the script works
+The script loads all the files as mentioned above. It then makes one by one the following transformations
+* appends test data after train data separatedly for measurements (X_train, X_test), people (subject_train, subject_test) and activities (y_train, y_test)
+* renames activity labels to lowerCamelCase
+* names the columns with their respective feature names from features.txt
+* adds people list as the first column of the data
+* adds activities as the second column of the data
+* extracts columns with selected features (see the Code book)
+* renames the columns according to naming conventions (see the Code book)
+* summarizes the data into the desired format with `ddply(data, .(person, activity), numcolwise(mean))` (see the Code book)
+* saves the data into "tidydata.txt" in tab separated format with header
+
 
 ##References
 * description and full original dataset   
